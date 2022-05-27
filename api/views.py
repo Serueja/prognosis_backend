@@ -5,6 +5,7 @@ from .models import Prognosis
 from .serializers import PrognosisSerializer
 from prognosis_generator import get_Prognosis
 from django.db import models
+import datetime
 # Create your views here.
 
 @api_view(['GET'])
@@ -57,6 +58,18 @@ def getPrognosis(request):
 
 def getOnePrognosis(request, pk):
     prognosis = Prognosis.objects.get(id = pk)
+    
+    if(prognosis.created_at != datetime.date.today()):
+        prognosis = edit(pk=pk)
+        prognosis.save()
+
     serializer = PrognosisSerializer(prognosis, many = False)
     
     return Response(serializer.data)
+
+def edit(pk):
+    prognosis = Prognosis.objects.get(pk = pk)
+
+    prognosis.prognosis_text = get_Prognosis()
+    prognosis.save()
+    return prognosis  

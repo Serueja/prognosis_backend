@@ -11,11 +11,9 @@ class PrognosisManager(models.Manager):
 class Prognosis(models.Model):
     zodiac_sign = models.CharField(max_length=50)
     prognosis_text = models.TextField()
-    created_at = models.DateField(auto_now_add= True)
+    created_at = models.DateField(auto_now= True)
 
     def __str__(self):
         return self.zodiac_sign + ' : ' + self.prognosis_text[0:50]
     
     objects = PrognosisManager()
-
-#test = Prognosis.objects.create_prognosis("Лев","текст прогноза",'12.05.2002')
