@@ -59,7 +59,7 @@ def getPrognosis(request):
 def getOnePrognosis(request, pk):
     prognosis = Prognosis.objects.get(id = pk)
     
-    if(prognosis.created_at != datetime.date.today()):
+    if(prognosis.created_at != datetime.date.today() or prognosis.prognosis_text == ''):
         prognosis = edit(pk=pk)
         prognosis.save()
 
