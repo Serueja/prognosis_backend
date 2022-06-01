@@ -1,0 +1,31 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.dialog{
+    text-decoration: none;
+}
+
+.dialogsItems {
+    padding: 10px;
+
+}
+
+.messages {
+    padding: 10px;
+}   
+
+.buttonClick{
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: none;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.buttonClick:hover{
+    color: coral;
+    box-shadow: 2px 2px 3px coral;
+    font-size:15px;
+}
+

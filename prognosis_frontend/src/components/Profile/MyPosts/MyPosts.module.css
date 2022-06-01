@@ -1,0 +1,17 @@
+.postsBlock{
+    padding: 10px;
+}
+
+.addPost {
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: none;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.addPost:hover{
+    color: coral;
+    box-shadow: 2px 2px 3px coral;
+    font-size:15px;
+}

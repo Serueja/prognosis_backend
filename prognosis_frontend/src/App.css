@@ -1,0 +1,10 @@
+.app-wrapper {
+
+    width:70%;
+    margin: auto;
+}
+
+.app-wrapper-content {
+margin: auto;
+display:flex
+}

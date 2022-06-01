@@ -1,0 +1,32 @@
+.nav {
+    grid-area: n;
+    background-color: none;
+    width: 30%;
+}
+
+.item {
+    display: inline;
+}
+
+.item a {
+    color: black;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: none;
+    text-decoration: none;
+}
+
+.item a:hover {
+    border-radius: 100px;
+    color: #CEA640;
+    background: #FFF79A;
+    border-bottom: 5px solid #E1B442;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.item.active {
+    color: black;
+}
+ img{
+    width : 30%;
+}
